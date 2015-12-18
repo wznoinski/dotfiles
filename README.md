@@ -7,6 +7,7 @@ A collections of dotfiles. Mostly poached from other individuals.
 
 * [**dotfiles** - lbragstad](https://github.com/lbragstad/dotfiles/)
 * 
+
 # TODO
 support vim Plugins:
 Error detected while processing /home/stack/.vimrc:
