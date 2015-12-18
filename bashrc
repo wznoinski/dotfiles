@@ -94,7 +94,7 @@ source ~/.bash/git-prompt
 source ~/.bash/git-completion
 
 # Set the terminal title to the current working directory.
-PS1="\[\033]0;\w\007\]\[\]";
+PS1="\n\[\033]0;\w\007\]\[\]";
 PS1+="\[\e[1;33m\]\u"
 PS1+="\[\e[1;37m\] at \[\e[1;31m\]\h"
 PS1+="\[\e[1;37m\] in \[\e[1;32m\]\w"
@@ -121,6 +121,6 @@ esac
 # Additional settings
 #
 
-if [ -e "~/.bash/proxy" ]; then
-    source "~/.bash/proxy"
+if [ -e ~/.bash/proxy ]; then
+    source ~/.bash/proxy
 fi
