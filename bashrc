@@ -28,6 +28,7 @@ function cdiff() {
     diff -u $@ | sed "s/^-/\x1b[31m-/;s/^+/\x1b[32m+/;s/^@/\x1b[34m@/;s/$/\x1b[0m/"
 }
 alias diff='cdiff'
+alias less='less -R'
 
 ################################################################
 # Shell config
@@ -123,4 +124,8 @@ esac
 
 if [ -e ~/.bash/proxy ]; then
     source ~/.bash/proxy
+fi
+
+if [ -e ~/.bash/aliases ]; then
+    source ~/.bash/aliases
 fi
