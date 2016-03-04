@@ -129,3 +129,7 @@ fi
 if [ -e ~/.bash/aliases ]; then
     source ~/.bash/aliases
 fi
+
+if [ -e ~/.bash/ls_colors]; then
+    source ~/.bash/ls_colors
+fi
