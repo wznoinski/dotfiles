@@ -3,7 +3,7 @@
 # create symlinks from the home directory to dotfiles in ~/dotfiles
 
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-dotfiles="vimrc vim inputrc bashrc bash next_review screenrc"
+dotfiles="vim inputrc bashrc bash next_review screenrc tmux.conf local"
 
 # download submodules
 git submodule init

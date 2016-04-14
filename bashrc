@@ -122,10 +122,10 @@ esac
 # Additional settings
 #
 
-if [ -e ~/.bash/proxy ]; then
-    source ~/.bash/proxy
+if [ -e ~/.local/proxy ]; then
+    source ~/.local/proxy
 fi
 
-if [ -e ~/.bash/aliases ]; then
-    source ~/.bash/aliases
+if [ -e ~/.local/aliases ]; then
+    source ~/.local/aliases
 fi

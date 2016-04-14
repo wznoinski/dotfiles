@@ -22,6 +22,7 @@ activity "Activity in %t(%n)"
 
 shelltitle "shell"
 shell -$SHELL
+defshell -$SHELL
 
 # Default screens
 screen -t shell 
@@ -29,4 +30,12 @@ screen -t shell
 #
 # Select first screen
 select 0
+
+# binding alt+e as meta (command) key
+# reset escape key to the default
+escape ^Aa
+# auxiliary register
+register S ^A
+# Alt + x produces ^A and acts as an escape key
+bindkey "^[e" process S
 
