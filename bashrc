@@ -133,3 +133,5 @@ fi
 if [ -e ~/.bash/ls_colors ]; then
     source ~/.bash/ls_colors
 fi
+
+EDITOR=vim
