@@ -2,4 +2,4 @@ vim/.netrwhist
 vim/bundle/*
 !vim/bundle/Vundle.vim
 local/*
-
+tmux/resurrect/*
