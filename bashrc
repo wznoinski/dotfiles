@@ -134,4 +134,9 @@ if [ -e ~/.bash/ls_colors ]; then
     source ~/.bash/ls_colors
 fi
 
+if [ -e ~/.local/environment ]; then
+    source ~/.local/environment
+fi
+
+
 EDITOR=vim
