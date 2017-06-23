@@ -41,6 +41,8 @@ else
     TERM='linux'
 fi
 
+export TERM=screen-256color
+
 # Enable sane home/pgup/pgdown/end keys
 # http://askubuntu.com/a/206722
 stty sane
@@ -138,5 +140,22 @@ if [ -e ~/.local/environment ]; then
     source ~/.local/environment
 fi
 
+if [ $(tput colors 2>/dev/null || echo 0) -ge 256 ] ; then
+    command -v powerline-daemon &>/dev/null
+    if [ $? -eq 0 ]; then
+        powerline-daemon -q
+        POWERLINE_BASH_CONTINUATION=1
+        POWERLINE_BASH_SELECT=1
+        PL1=/usr/share/powerline/bash/powerline.sh
+        PL2=/usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
+        PL3=/usr/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+        for n in "$PL1" "$PL2" "$PL3" ; do
+            if [ -f $n ] ; then
+                . $n
+            fi
+        done
+    fi
+fi
 
 EDITOR=vim
+export PATH=$PATH:~/bin/lbrycrd-linux/
