@@ -3,3 +3,4 @@ vim/bundle/*
 !vim/bundle/Vundle.vim
 local/*
 tmux/plugins/*
+tmux/resurrect/*
